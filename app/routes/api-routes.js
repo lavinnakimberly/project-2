@@ -15,7 +15,7 @@ module.exports = function(app) {
     .header("X-Mashape-Key", "ZMh6WFtGZTmshzeHIQXXkO28zrAmp1O695Yjsn4Y9IePA2s0Nv")
     .header("Accept", "application/json")
     .end(function (result) {
-    console.log(result.status, result.headers, result.body);
+    console.log(result.body);
   });
 
 };
