@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Chef Explorer</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/bootstrapIndex.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<!-- Navigation bar -->
+<nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="navbar-collapse-1">
+                    <span class="sr-only">Navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">Chef Explorer</a>
+            </div>
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a class="page-scroll" href="#about">About</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#">How it Works</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#">Meal Planner</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+         </div>
+    </nav>
+
+<div class="jumbotron">
+    <header class="container">
+        <h1>Chef Explorer</h1>
+        <hr>
+        <p> </p>
+    </header>
+</div>
+<header>
+ <div class="header-content">
+        <div class="header-content-inner">
+            <h1>Header</h1>
+            <hr>
+            <p>Content</p>           
+        </div>
+ </div>
+</header>
+
+<!-- "How it works" Section -->
+ <section id="services">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">How it Works:</h2>
+                    <hr class="primary">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <i class="fa fa-4x fa-globe wow bounceIn text-primary"></i>
+                        <h3>Step 1</h3>
+                        <p class="text-muted">1</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <i class="fa fa-4x fa-paper-plane wow bounceIn text-primary" data-wow-delay=".1s"></i>
+                        <h3>Step 2</h3>
+                        <p class="text-muted">2</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <i class="fa fa-4x fa-thumbs-up wow bounceIn text-primary" data-wow-delay=".2s"></i>
+                        <h3>Step 3</h3>
+                        <p class="text-muted">3</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <i class="fa fa-4x fa-heart wow bounceIn text-primary" data-wow-delay=".3s"></i>
+                        <h3>Step 4</h3>
+                        <p class="text-muted">4</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- login modal -->
+<div class="container">
+  <h2>Get Started!</h2>
+    <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal"> Sign up</button>
+  
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">    
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Sign Up!</h4>
+        </div>
+        <div class="modal-body">
+         	<form>
+            <div class="form-group">
+                <label for="inputFirstName">First Name</label>
+                <input type="firstname" class="form-control" id="inputFirstNam" placeholder="First Name">
+              </div>
+            <div class="form-group">
+                <label for="inputLastName">Last Name</label>
+                <input type="lastname" class="form-control" id="inputLastName" placeholder="Last Name">
+            </div>
+              <div class="form-group">
+                <label for="inputEmail">Email address</label>
+                <input type="email" class="form-control" id="inputEmail" placeholder="Enter email">
+              </div>
+              <div class="form-group">
+                <label for="inputPassword">Password</label>
+                <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+              </div>
+        </div>
+
+      
+        <div class="modal-footer">
+          <button id="login_register_btn" type="button" class="btn btn-link">Already a member? Login here</button>
+          <button type="submit" class="btn btn-default">Submit</button>
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>              
+      </div>      
+    </div>
+  </div>
+  
+</div>
+
+
+</body>
+</html>

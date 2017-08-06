@@ -1,0 +1,21 @@
+body {
+	font-family: 'Open Sans', sans-serif;
+	line-height: 2;
+	font-size:16px;
+}
+
+h1, h2 {
+	font-family: 'Droid Serif', serif;
+}
+
+.jumbotron {
+	background: url("http://www.powerpointhintergrund.com/uploads/food-background-2.jpg") no-repeat center center;
+	background-size: 100% auto;
+	
+}
+
+.jumbotron .container{
+    font-family: 'Droid Serif', serif;
+    color: #ff9900;
+	padding:150px 0;
+	}
