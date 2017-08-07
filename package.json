@@ -24,6 +24,7 @@
     "express-handlebars": "^3.0.0",
     "method-override": "^2.3.9",
     "mocha": "^3.5.0",
+    "request": "^2.81.0",
     "unirest": "^0.5.1"
   }
 }
