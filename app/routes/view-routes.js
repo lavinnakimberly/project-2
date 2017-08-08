@@ -7,7 +7,6 @@ module.exports = function(app) {
 
   // index route loads view.html
   app.get("/meal-plan", function(req, res) {
-    console.log("test")
     res.sendFile(path.join(__dirname, "../public/meal-plan.html"));
 
   });
