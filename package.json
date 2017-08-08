@@ -24,7 +24,9 @@
     "express-handlebars": "^3.0.0",
     "method-override": "^2.3.9",
     "mocha": "^3.5.0",
+    "mysql2": "^1.4.0",
     "request": "^2.81.0",
+    "sequelize": "^4.4.2",
     "unirest": "^0.5.1"
   }
 }
