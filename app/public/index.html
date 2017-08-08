@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Chef Explorer</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/bootstrapIndex.css">
+ <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/css/materialize.min.css"> -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body id ="res">
+
+<div class="example3">
+  <nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar3">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="/"><img src="img/image.png" alt="Chef Explorer">
+        </a>
+      </div>
+      <div id="navbar3" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li class="active"><a href="#">Home</a></li>
+          <li><a href="#">Meal Planner</a></li>
+          <li><a href="#"></a></li>
+          <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+    </div>
+ 
+    </div>
+    
+  </nav>
+</div>
+
+
+<div class="jumbotron">
+    <header class="container">
+      <div class="title">       
+        
+      </div class ="title">  
+        <h1> Plan. Cook. Eat. </h1> 
+        <hr>
+       
+   </header>
+</div>
+
+
+
+<section class="bg-primary" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <h2 class="section-heading">Be a Chef Explorer</h2>
+                    <hr class="light">
+                    <p class="text-faded">Chef Explorer is simply designed for you to Plan. Cook. and Eat. Our meal planner feature is an intuitive feature for you to prepare your meals accordingly. Be efficient and precise</p>
+                
+                </div>
+            </div>
+           
+        </div>
+    </section>
+
+<!-- "How it works" Section -->
+ <section id="services">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">How it Works</h2>
+                    <hr class="primary">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 text-center values-unit">
+                    <div class="service-box">
+                        <i class="fa fa-4x fa-globe wow bounceIn text-primary"></i>
+                        <h3 class="num">1</h3>  
+                        <p class="text-muted">1</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center values-unit">
+                    <div class="service-box">                      
+                        <h3 class="num">2</h3>
+                        <p class="text-muted">2</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center values-unit">
+                    <div class="service-box">                       
+                        <h3 class="num">3</h3>
+                        <p class="text-muted">3</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center values-unit">
+                    <div class="service-box">                      
+                        <h3 class="num">4</h3>
+                        <p class="text-muted">3</p>
+                    </div>
+                </div>
+                </div>
+        </div>
+             <!-- login modal -->
+                <div class="container">         
+                    <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal"> Sign up</button>  
+                <div class="modal fade" id="myModal" role="dialog">
+                    <div class="modal-dialog">    
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Sign Up!</h4>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                            <div class="form-group">
+                                <label for="inputFirstName">First Name</label>
+                                <input type="firstname" class="form-control" id="inputFirstName" placeholder="First Name">
+                            </div>
+                            <div class="form-group">
+                                <label for="inputLastName">Last Name</label>
+                                <input type="lastname" class="form-control" id="inputLastName" placeholder="Last Name">
+                            </div>
+                            <div class="form-group">
+                                <label for="inputEmail">Email address</label>
+                                <input type="email" class="form-control" id="inputEmail" placeholder="Enter email">
+                            </div>
+                            <div class="form-group">
+                                <label for="inputPassword">Password</label>
+                                <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+                            </div>
+                        </div>      
+                        <div class="modal-footer">
+                        <button id="login_register_btn" type="button" class="btn btn-link">Already a member? Login here</button>
+                        <button type="submit" class="btn btn-default">Submit</button>
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>              
+                    </div>      
+                    </div>
+                </div>
+  
+</div>
+    </section>
+
+    <!-- images section -->
+    <section class="no-padding" id="portfolio">
+        <div class="container-fluid">
+            <div class="row no-gutter">
+                <div class="col-lg-4 col-sm-6">
+                    <div class="portfolio-box">
+                        <img src="img/p1.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="portfolio-box">
+                        <img src="img/p2.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                           
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="portfolio-box">
+                        <img src="img/p3.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                            
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="portfolio-box">
+                        <img src="img/p4.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">                               
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<aside class="bg-dark">
+        <div class="container text-center">
+            <div class="call-to-action">
+                <h2>  </h2>               
+            </div>
+        </div>
+    </aside>
+
+</body>
+</html>

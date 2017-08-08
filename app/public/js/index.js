@@ -1,17 +1,17 @@
 // The code in add.js handles what happens when the user clicks the "Add a book" button.
 
 // When user clicks add-btn
-$("#add-btn").on("click", function(event) {
+$("#login_register_btn").on("click", function(event) {
   event.preventDefault();
 
-  var newBook = {
-    title: $("#title").val().trim(),
-    author: $("#author").val().trim(),
-    genre: $("#genre").val().trim(),
-    pages: $("#pages").val().trim()
+  var newUser = {
+    firstName: $("#inputFirstName").val().trim(),
+    lastName: $("#inputLastName").val().trim(),
+    email: $("#inputEmail").val().trim(),
+    password: $("#inputPassword").val().trim()
   };
 
-  $.post("/api/new", newBook)
+  $.post("/api/new", newUser)
     .done(function(data) {
       console.log(data);
     });
