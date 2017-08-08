@@ -30,6 +30,8 @@ app.use(express.static("app/public"));
 app.engine("handlebars", handlebars({ defaultLayout: "main" }));
 app.set("view engine", "handlebars");
 
+app.set("views", "app/")
+
 // Routes
 // =============================================================
 require("./app/routes/api-routes.js")(app);
