@@ -27,10 +27,13 @@ app.use(methodOverride("_method"));
 app.use(express.static("app/public"));
 
 // Set Handlebars.
-app.engine("handlebars", handlebars({ defaultLayout: "main" }));
+app.engine("handlebars", handlebars({ 
+  defaultLayout: "main", 
+  layoutsDir: __dirname + "/app/views/layouts"
+}));
 app.set("view engine", "handlebars");
 
-app.set("views", "app/")
+app.set("views", __dirname + "/app/views")
 
 // Routes
 // =============================================================
