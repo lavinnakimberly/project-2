@@ -10,7 +10,7 @@ var Configuration = {
 
     //The Mashape application you want to use for this session.
     //TODO: Replace the XMashapeKey with an appropriate value
-    xMashapeKey : "TODO: Replace"
+    xMashapeKey : "ZMh6WFtGZTmshzeHIQXXkO28zrAmp1O695Yjsn4Y9IePA2s0Nv"
 
 };
 

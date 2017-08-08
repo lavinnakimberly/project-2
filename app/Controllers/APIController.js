@@ -1238,7 +1238,7 @@ var APIController = {
     createRecipeCard: function (backgroundImage, image, ingredients, instructions, mask, readyInMinutes, servings, title, author, backgroundColor, fontColor, source, fieldParameters, callback) {
         //Assign default values
         backgroundImage = backgroundImage || "background1";
-        image = image || The image.;
+        image = image;
         ingredients = ingredients || "2 cups of green beans";
         instructions = instructions || "cook the beans";
         mask = mask || "ellipseMask";
