@@ -19,9 +19,12 @@
   "homepage": "https://github.com/lavinnakimberly/project-2#readme",
   "dependencies": {
     "body-parser": "^1.17.2",
+    "chai": "^4.1.1",
     "express": "^4.15.3",
     "express-handlebars": "^3.0.0",
     "method-override": "^2.3.9",
+    "mocha": "^3.5.0",
+    "request": "^2.81.0",
     "unirest": "^0.5.1"
   }
 }
