@@ -11,8 +11,8 @@ var spoon = require("../Controllers/APIController.js")
 // Routes
 // =============================================================
 module.exports = function(app) {
-  app.get("/meal-plan", function(req, res) {
-      var mealPlan = spoon.getComputeDailyMealPlan(null, "week", function(spoonErr, spoonRes){
+  app.get("/api/meal-plan", function(req, res) {
+      var mealPlan = spoon.getComputeDailyMealPlan(1500, null, function(spoonErr, spoonRes){
       if (spoonErr){
         console.log(spoonErr)
         res.json(spoonErr) 
