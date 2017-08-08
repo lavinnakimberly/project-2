@@ -1,4 +1,6 @@
 // Routes
+
+var spoon = require("../config/connection.js")
 // =============================================================
 module.exports = function(app) {
 
@@ -6,7 +8,8 @@ module.exports = function(app) {
 
   // index route loads view.html
   app.get("/", function(req, res) {
-    res.render("index");
+  	console.log(res)
+    res.json(res);
   });
 
 };
