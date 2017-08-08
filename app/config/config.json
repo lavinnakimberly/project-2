@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "root",
+    "password": "root01",
+    "database": "chefExplorer",
+    "host": "",
+    "dialect": "mysql"
+  },
+  "test": {
+    "username": "root",
+    "password": "root01",
+    "database": "chefExplorer",
+    "host": "",
+    "dialect": "mysql"
+  },
+  "production": {
+    "username": "root",
+    "password": "root01",
+    "database": "chefExplorer",
+    "host": "",
+    "dialect": "mysql"
+  }
+}
