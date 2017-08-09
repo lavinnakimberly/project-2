@@ -38,9 +38,13 @@ $(".modal-trigger").on("click", function(){
 })
 
 //needs to reset modal on close or just adds to last recipe.
-$("modal-close").on("click", function(){
+$("modal-close").on("hidden.bs.modal", function(){
 	$("#modTitle").text("")
 	$("#modImg").attr("src", "#")
 	$("#ingList").removeChild()
 	$("recList").removeChild()
 })
+
+$("#modal1").on("hidden.ns.modal", function(){
+	  $(this).find("input,textarea,select").val('').end()
+});

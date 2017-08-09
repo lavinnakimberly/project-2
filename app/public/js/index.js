@@ -6,7 +6,7 @@ $(document).ready(function(){
       $(this).find("#modalForm")[0].reset()
   });
 });
-
+/*
 // When user clicks add-btn
 $("#login_register_btn").on("click", function(event) {
   event.preventDefault();
@@ -32,4 +32,4 @@ $.get("/api/all", function(data) {
   wellSection.text("well");
   $("#well-section").append(wellSection);
 });
-
+*/
