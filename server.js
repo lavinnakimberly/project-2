@@ -38,6 +38,8 @@ app.set("view engine", "handlebars");
 
 app.set("views", __dirname + "/app/views")
 
+require("./app/routes/api-routes.js")(app);
+require("./app/routes/view-routes.js")(app);
 
 // Starts the server to begin listening
 // =============================================================
