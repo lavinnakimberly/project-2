@@ -13,7 +13,7 @@ var spoon = require("../Controllers/APIController.js")
 module.exports = function(app) {
 
   app.get("/api/meal-plan", function(req, res) {
-      console.log("test")
+
       var mealPlan = spoon.getComputeDailyMealPlan(null, "week", function(spoonErr, spoonRes){
         if (spoonErr){
           console.log(spoonErr)
