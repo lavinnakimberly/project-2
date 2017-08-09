@@ -14,6 +14,9 @@ var handlebars = require("express-handlebars");
 var app = express();
 var PORT = process.env.PORT || 8080;
 
+// Requiring our models for syncing
+
+
 // Sets up the Express app to handle data parsing
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -27,13 +30,14 @@ app.use(methodOverride("_method"));
 app.use(express.static("app/public"));
 
 // Set Handlebars.
-app.engine("handlebars", handlebars({ defaultLayout: "main" }));
+app.engine("handlebars", handlebars({ 
+  defaultLayout: "main", 
+  layoutsDir: __dirname + "/app/views/layouts"
+}));
 app.set("view engine", "handlebars");
 
-app.set("views", "app/")
+app.set("views", __dirname + "/app/views")
 
-// Routes
-// =============================================================
 require("./app/routes/api-routes.js")(app);
 require("./app/routes/view-routes.js")(app);
 
