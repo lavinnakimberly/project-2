@@ -3,3 +3,28 @@
     z-index: 0;
 }
 
+#navBarButtons {
+	display: flex;
+
+}
+
+#navBarButtons li {
+	display: flex;
+	justify-content: space-between;
+}
+
+#loginBtn {
+	background-color: #222;
+	color: #9d9d9d;
+	border: none;
+	font-size: 14px;
+	transition: .5s;
+}
+
+#loginBtn:hover {
+	color: white;
+}
+
+#loginBtn:active {
+	border: none;
+}
