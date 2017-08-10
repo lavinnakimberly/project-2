@@ -7,15 +7,27 @@
 var express = require("express");
 var bodyParser = require("body-parser");
 var methodOverride = require("method-override");
-var handlebars = require("express-handlebars");
+// var passport = require("./config/passport");
+// var session = require("express-session");
+
 
 // Sets up the Express App
 // =============================================================
-var app = express();
+
 var PORT = process.env.PORT || 8080;
+// var db = require("./models");
 
-// Requiring our models for syncing
+// Creating express app and configuring middleware needed for authentication
+var app = express();
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.json());
+app.use(express.static("public"));
 
+
+// We need to use sessions to keep track of our user's login status
+// app.use(session({ secret: "keyboard cat", resave: true, saveUninitialized: true }));
+// app.use(passport.initialize());
+// app.use(passport.session());
 
 // Sets up the Express app to handle data parsing
 app.use(bodyParser.json());
@@ -29,20 +41,14 @@ app.use(methodOverride("_method"));
 // Static directory
 app.use(express.static("app/public"));
 
-// Set Handlebars.
-app.engine("handlebars", handlebars({ 
-  defaultLayout: "main", 
-  layoutsDir: __dirname + "/app/views/layouts"
-}));
-app.set("view engine", "handlebars");
-
-app.set("views", __dirname + "/app/views")
 
 require("./app/routes/api-routes.js")(app);
 require("./app/routes/view-routes.js")(app);
 
-// Starts the server to begin listening
-// =============================================================
-app.listen(PORT, function() {
-  console.log("App listening on PORT " + PORT);
-});
+// Syncing our database and logging a message to the user upon success
+// db.sequelize.sync().then(function() {
+  app.listen(PORT, function() {
+    console.log("==> 🌎  Listening on port %s. Visit http://localhost:%s/ in your browser.", PORT, PORT);
+  })
+// });
+

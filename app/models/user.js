@@ -9,13 +9,13 @@ module.exports = function(sequelize, DataTypes) {
      first_name: {
       type: DataTypes.STRING,
       allowNull: false
-    }
+    },
 
      last_name: {
       type: DataTypes.STRING,
       allowNull: false
-    }
-    // The email cannot be null, and must be a proper email before creation
+    },
+    // The emai,l cannot be null, and must be a proper email before creation
     
     email: {
       type: DataTypes.STRING,
