@@ -27,13 +27,13 @@
         </a>
       </div>
       <div id="navbar3" class="navbar-collapse collapse">
-        <ul class="nav navbar-nav navbar-right">
+        <ul id="navBarButtons" class="nav navbar-nav navbar-right">
           <li class="active"><a href="#">Home</a></li>
-          <li><a href="meal-plan.html">Meal Planner</a></li>
-          <li><a href="#"></a></li>
+          <li><a id="meal-planBtn" href="meal-plan.html">Meal Planner</a></li>
+
           <!--login modal-->
-          <li><button type="button" class="btn btn-default btn-sm" data-target=".myModal2" data-toggle="modal">Login</button>  
-                <div class="modal fade myModal2" id="myModal2" tabindex="s1" role="dialog" style="z-index: 100000;">
+          <li><button type="button" id="loginBtn" class="btn btn-default btn-sm" data-target=".myModal2" data-toggle="modal" ><span class="glyphicon glyphicon-log-in"></span> Login</button>  
+                <div class="modal fade myModal2" id="myModal2" tabindex="s1" role="dialog">
                     <div class="modal-dialog">    
                     <div class="modal-content">
                         <div class="modal-header">
@@ -52,7 +52,6 @@
                             </div>
                         </div>      
                         <div class="modal-footer">
-                        <button id="login_register_btn" type="button" class="btn btn-link">Already a member? Login here</button>
                         <button id="modal-submit-btn" type="submit" class="btn btn-default">Submit</button>
                         <button id ="modal-close-btn" type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                         </div>              
@@ -88,53 +87,11 @@
                 <div class="col-lg-8 col-lg-offset-2 text-center">
                     <h2 class="section-heading">Be a Chef Explorer</h2>
                     <hr class="light">
-                    <p class="text-faded">Chef Explorer is simply designed for you to Plan. Cook. and Eat. Our meal planner feature is an intuitive feature for you to prepare your meals accordingly. Be efficient and precise</p>
-                
+                    <p class="text-faded">Chef Explorer is designed for you to plan, cook, and eat! Simply sign up and your recipes will be set for the week. Get cookin' good lookin'!</p>
                 </div>
             </div>
-           
-        </div>
-    </section>
+            <section id="services">
 
-<!-- "How it works" Section -->
- <section id="services">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">How it Works</h2>
-                    <hr class="primary">
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-3 col-md-6 text-center values-unit">
-                    <div class="service-box">
-                        <i class="fa fa-4x fa-globe wow bounceIn text-primary"></i>
-                        <h3 class="num">1</h3>  
-                        <p class="text-muted">1</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 text-center values-unit">
-                    <div class="service-box">                      
-                        <h3 class="num">2</h3>
-                        <p class="text-muted">2</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 text-center values-unit">
-                    <div class="service-box">                       
-                        <h3 class="num">3</h3>
-                        <p class="text-muted">3</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 text-center values-unit">
-                    <div class="service-box">                      
-                        <h3 class="num">4</h3>
-                        <p class="text-muted">3</p>
-                    </div>
-                </div>
-                </div>
-        </div>
              <!-- sign up modal -->
                 <div class="container">         
                     <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal"> Sign up</button>  
@@ -173,8 +130,11 @@
                     </div>
                 </div>
   
-</div>
+        </div>
     </section>
+        </div>
+    </section>
+
 
     <!-- images section -->
     <section class="no-padding" id="portfolio">
@@ -225,12 +185,15 @@
 <aside class="bg-dark">
         <div class="container text-center">
             <div class="call-to-action">
-                <h2>  </h2>               
+                <footer>
+    	            <div class="footer-container">
+      		            Copyright &copy; 2017 Chef Explorer 
+    	            </div>
+                </footer>            
             </div>
         </div>
     </aside>
 
     <script src="js/index.js"> </script>
-
 </body>
 </html>
