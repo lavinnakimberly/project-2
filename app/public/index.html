@@ -27,13 +27,13 @@
         </a>
       </div>
       <div id="navbar3" class="navbar-collapse collapse">
-        <ul class="nav navbar-nav navbar-right">
+        <ul id="navBarButtons" class="nav navbar-nav navbar-right">
           <li class="active"><a href="#">Home</a></li>
-          <li><a href="meal-plan.html">Meal Planner</a></li>
-          <li><a href="#"></a></li>
+          <li><a id="meal-planBtn" href="meal-plan.html">Meal Planner</a></li>
+
           <!--login modal-->
-          <li><button type="button" class="btn btn-default btn-sm" data-target=".myModal2" data-toggle="modal">Login</button>  
-                <div class="modal fade myModal2" id="myModal2" tabindex="s1" role="dialog" style="z-index: 100000;">
+          <li><button type="button" id="loginBtn" class="btn btn-default btn-sm" data-target=".myModal2" data-toggle="modal" ><span class="glyphicon glyphicon-log-in"></span> Login</button>  
+                <div class="modal fade myModal2" id="myModal2" tabindex="s1" role="dialog">
                     <div class="modal-dialog">    
                     <div class="modal-content">
                         <div class="modal-header">
