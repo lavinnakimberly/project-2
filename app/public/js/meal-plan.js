@@ -21,16 +21,28 @@ $.get("/api/meal-plan", function(data) {
 
 $(document).ready(function(){
     // the "href" attribute of the modal trigger must specify the modal ID that wants to be triggered
-    $('.modal').modal();
+    $('.modal').modal({dismissible: false});
 });
 
 $(".modal-trigger").on("click", function(){
 	$.get("/api/recipe/"+$(this).attr("recipe"), function(data) {
+
+		$(".modal-content").append("<h2 id=modTitle></h2>")
 		$("#modTitle").text(data.title)
+
+		$(".modal-content").append("<img id=modImg>")
 		$("#modImg").attr("src", data.image)
+
+		$(".modal-content").append("<h3>Ingredients</h3>")
+		$(".modal-content").append("<ul id=ingList></ul>")
+
 		for(j=0;j<data.extendedIngredients.length;j++){
 			$("#ingList").append("<li>"+data.extendedIngredients[j].originalString)
 		}
+
+		$(".modal-content").append("<h3>Recipe</h3>")
+		$(".modal-content").append("<ul id=recList></ul>")
+
 		for(k=0;k<data.analyzedInstructions[0].steps.length;k++){
 			$("#recList").append("<li>"+data.analyzedInstructions[0].steps[k].step)
 		}
@@ -38,13 +50,6 @@ $(".modal-trigger").on("click", function(){
 })
 
 //needs to reset modal on close or just adds to last recipe.
-$("modal-close").on("hidden.bs.modal", function(){
-	$("#modTitle").text("")
-	$("#modImg").attr("src", "#")
-	$("#ingList").removeChild()
-	$("recList").removeChild()
+$(".modal-close").on("click", function(){
+	$(".modal-content").empty()
 })
-
-$("#modal1").on("hidden.ns.modal", function(){
-	  $(this).find("input,textarea,select").val('').end()
-});
