@@ -1,16 +1,18 @@
 // The code in add.js handles what happens when the user clicks the "Add a book" button.
 
 //clears modal input when modal after model is hidden
+
+//signup Modal
 $(document).ready(function(){
   $("#myModal").on("hidden.bs.modal", function(){
       $(this).find("#modalForm")[0].reset()
   });
 });
-$(document).ready(function(){
-  $("#myModal2").on("hidden.bs.modal", function(){
-      $(this).find("#modalForm2")[0].reset()
-  });
-});	
+// $(document).ready(function(){
+//   $("#myModal2").on("hidden.bs.modal", function(){
+//       $(this).find("#modalForm2")[0].reset()
+//   });
+// });	
 
 /*
 // When user clicks add-btn
