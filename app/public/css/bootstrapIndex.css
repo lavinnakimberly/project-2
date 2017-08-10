@@ -24,8 +24,14 @@ hr{
 .jumbotron {
 	background: url("http://www.powerpointhintergrund.com/uploads/food-background-2.jpg") no-repeat center center;
 	background-size: 100% auto;	
-	 opacity: .9; 
+	 opacity: .9;
+    background-attachment: fixed;
+    margin-bottom: 0px !important; 
 	
+}
+
+#id {
+
 }
 
 .jumbotron .container{
@@ -51,7 +57,7 @@ hr{
 
 
  .bg-primary {
-    background-color: #00802b !important;
+    background-color: #008040 !important;
 } 
 
 .section {
@@ -424,4 +430,5 @@ header .header-content .header-content-inner p {
     padding-right: 0;
     padding-left: 0;
 }
+
 
