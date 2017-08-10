@@ -6,6 +6,12 @@ $(document).ready(function(){
       $(this).find("#modalForm")[0].reset()
   });
 });
+$(document).ready(function(){
+  $("#myModal2").on("hidden.bs.modal", function(){
+      $(this).find("#modalForm2")[0].reset()
+  });
+});	
+
 /*
 // When user clicks add-btn
 $("#login_register_btn").on("click", function(event) {
