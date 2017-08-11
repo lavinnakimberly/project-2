@@ -15,7 +15,7 @@ body {
 #signUpBtn{
     text-align: center;
     position: relative;
-    margin: -50px;
+    margin: 20px;
 
 }
 
@@ -80,6 +80,10 @@ hr{
 
 .wrapper {
     text-align: center;
+}
+.button {
+    position: absolute;
+    top: 50%;
 }
 
 .values-unit h3 {
@@ -448,5 +452,7 @@ header .header-content .header-content-inner p {
     padding-right: 0;
     padding-left: 0;
 }
+
+
 
 

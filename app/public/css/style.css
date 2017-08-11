@@ -30,6 +30,22 @@
 }
 
 .carousel.carousel-slider .carousel-item {
-	min-height: 500px;
+	min-height: 570px;
+}
+
+.meal-plan-header {
+    margin: 25px;
+    max-width: 1280px;
+    width: 90%;
+}
+
+body {
+	background-color:black;
+}
+
+footer {
+	text-align: center;
+	color: white;
+	padding: 10px
 }
 
