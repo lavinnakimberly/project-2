@@ -32,6 +32,7 @@
           <li><a id="meal-planBtn" href="meal-plan.html">Meal Planner</a></li>
 
           <!--login modal-->
+          <
           <li><button type="button" id="loginBtn" class="btn btn-default btn-sm" data-target=".myModal2" data-toggle="modal" ><span class="glyphicon glyphicon-log-in"></span> Login</button>  
                 <div class="modal fade myModal2" id="myModal2" tabindex="s1" role="dialog">
                     <div class="modal-dialog">    
@@ -40,6 +41,7 @@
                         <button type="button" class="close" data-dismiss="modal">&times;</button>
                         <h4 class="modal-title">Login</h4>
                         </div>
+                    <form class="signup">
                         <div class="modal-body">
                             <form id= "modalForm2">
                             <div class="form-group">
@@ -54,15 +56,13 @@
                         <div class="modal-footer">
                         <button id="modal-submit-btn" type="submit" class="btn btn-default">Submit</button>
                         <button id ="modal-close-btn" type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </form>
                         </div>              
                     </div>      
                     </div>
-                </div>
-  
-
+                </div> 
     </div>
- 
-    </div>
+   </div>
     
   </nav>
 </div>
@@ -105,7 +105,7 @@
                         <h4 class="modal-title">Sign Up!</h4>
                         </div>
                         <div class="modal-body">
-                            <form id= "modalForm">
+                        <form class="signup" id="modalForm" >
                             <div class="form-group">
                                 <label for="inputFirstName">First Name</label>
                                 <input type="firstname" class="form-control" id="inputFirstName" placeholder="First Name">
@@ -115,18 +115,19 @@
                                 <input type="lastname" class="form-control" id="inputLastName" placeholder="Last Name">
                             </div>
                             <div class="form-group">
-                                <label for="inputEmail">Email address</label>
-                                <input type="email" class="form-control" id="inputEmail" placeholder="Enter email">
+                                <label for="inputEmail1">Email address</label>
+                                <input type="email" class="form-control" id="inputEmail1" placeholder="Enter email">
                             </div>
                             <div class="form-group">
-                                <label for="inputPassword">Password</label>
-                                <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+                                <label for="inputPassword1">Password</label>
+                                <input type="password" class="form-control" id="inputPassword1" placeholder="Password">
                             </div>
                         </div>      
                         <div class="modal-footer">
                         <button id="login_register_btn" type="button" class="btn btn-link">Already a member? Login here</button>
                         <button id="modal-submit-btn" type="submit" class="btn btn-default">Submit</button>
                         <button id ="modal-close-btn" type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </form>
                         </div>              
                     </div>      
                     </div>
@@ -154,5 +155,6 @@
     </aside>
 
     <script src="js/index.js"> </script>
+    <script src="js/signup.js"> </script>
 </body>
 </html>
