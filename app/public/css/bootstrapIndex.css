@@ -12,6 +12,13 @@ body {
 	height: 100%;
 }
 
+#signUpBtn{
+    text-align: center;
+    position: relative;
+    margin: -50px;
+
+}
+
 h1, h2 {
 	font-family: 'Droid Serif', serif;
 }
