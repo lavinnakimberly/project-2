@@ -27,21 +27,29 @@ hr{
 	 opacity: .9;
     background-attachment: fixed;
     margin-bottom: 0px !important; 
-	
 }
 
-#id {
-
-}
-
-.jumbotron .container{
+.jumbotron .container {
     font-family: 'Droid Serif', serif;
     color: #ff9900;
 	padding:150px 0;
 	color: white !important;
+}
 
-	 } 
+.jumbotron2 {
+    background: url("../img/ingredients.jpg") no-repeat center center;
+	background-size: 100% auto;	
+	opacity: .9;
+    background-attachment: fixed;
+    margin-bottom: 0px !important; 
+}
 
+.jumbotron2 .container2{
+    font-family: 'Droid Serif', serif;
+    color: #ff9900;
+	padding:150px 0;
+	color: white !important;
+} 
 
 .example3 .navbar-brand {
   height: 80px;
@@ -55,13 +63,16 @@ hr{
   margin: 25px 15px 25px 0;
 }
 
-
  .bg-primary {
     background-color: #008040 !important;
 } 
 
 .section {
 	padding: 100px;
+}
+
+.wrapper {
+    text-align: center;
 }
 
 .values-unit h3 {
