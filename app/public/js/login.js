@@ -5,11 +5,23 @@ $(document).ready(function() {
   var passwordInput = $("input#inputPassword");
 
   // When the form is submitted, we validate there's an email and password entered
+  
+  // $("#modal-submit-btn").click(function(event){
+  //   console.log("button clicked");
+  //   event.preventDefault();
+  //    var userData = {
+  //     email: emailInput.val().trim(),
+  //     password: passwordInput.val().trim()
+  //   }; 
+  // });
+  // console.log(userData);
+
   loginForm.on("submit", function(event) {
+    console.log("btton clicked");
     event.preventDefault();
     var userData = {
-      email: inputEmail.val().trim(),
-      password: inputPassword.val().trim()
+      email: emailInput.val().trim(),
+      password: passwordInput.val().trim()
     };
 
     if (!userData.email || !userData.password) {

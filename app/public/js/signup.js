@@ -37,7 +37,12 @@ $(document).ready(function() {
       last_name: last_name,
       email: email,
       password: password
-    }).then(function(data) { console.log(data);
+    }).then(function(data) {
+      $("#myModal").modal("toggle");
+      $("#loginBtn").text("Logged in as " + data.first_name);
+      // $(".member-name").text("Welcome " + data.first_name);
+      console.log("modal closed");      
+      console.log(data);
       // window.location.replace(data);
       // If there's an error, handle it by throwing up a boostrap alert
     }).catch(handleLoginErr);
