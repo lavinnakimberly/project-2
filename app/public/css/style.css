@@ -28,3 +28,8 @@
 #loginBtn:active {
 	border: none;
 }
+
+.carousel.carousel-slider .carousel-item {
+	min-height: 500px;
+}
+
