@@ -459,6 +459,10 @@ header .header-content .header-content-inner p {
     font-size: 55px;
 }
 
+.bg-primary {
+    color: black !important;
+}
+
 
 
 
