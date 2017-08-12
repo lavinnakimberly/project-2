@@ -49,3 +49,34 @@ footer {
 	padding: 10px
 }
 
+#day-1 {
+	background-image: url("../img/pic1.jpg")!important;
+}
+
+#day-2 {
+	background-image: url("../img/pic2.jpg")!important;
+}
+
+#day-3 {
+	background-image: url("../img/pic3.jpg")!important;
+}
+
+#day-4 {
+	background-image: url("../img/pic4.jpg")!important;
+}
+
+#day-5 {
+	background-image: url("../img/pic5.jpg")!important;
+}
+
+#day-6 {
+	background-image: url("../img/pic6.jpg")!important;
+}
+
+#day-7 {
+	background-image: url("../img/pic7.jpg")!important;
+}
+
+.carousel-item {
+	background-size: 100%;
+}
