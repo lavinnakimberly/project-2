@@ -49,7 +49,12 @@ $(document).ready(function() {
 
     console.log(first_name + " " + last_name + " " + email + " " + password);
   }
-
+  //redirect user to login modal if they are already a user
+    $("#login_register_btn").click(function(){
+      $("#myModal").modal("toggle");     
+      $('#myModal2').modal('show');
+    });
+  
   function handleLoginErr(err) {
     $("#alert .msg").text(err.responseJSON);
     $("#alert").fadeIn(500);
