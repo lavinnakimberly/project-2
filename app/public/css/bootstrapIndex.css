@@ -44,7 +44,7 @@ hr{
 }
 
 .jumbotron2 {
-    background: url("../img/ingredients.jpg") no-repeat center center;
+    background: url("../img/cooking.jpg") no-repeat center center;
 	background-size: 100% auto;	
 	opacity: .9;
     background-attachment: fixed;
@@ -173,6 +173,7 @@ p {
 
 .text-faded {
     color: rgba(255,255,255,.7);
+    font-size: 18px
 }
 
 section {
@@ -452,6 +453,13 @@ header .header-content .header-content-inner p {
     padding-right: 0;
     padding-left: 0;
 }
+
+#quote {
+    color: white;
+    font-size: 55px;
+}
+
+
 
 
 
